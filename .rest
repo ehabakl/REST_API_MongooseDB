@@ -1,0 +1,46 @@
+get http://localhost:5000/entities
+
+###
+
+post http://localhost:5000/entities
+Content-Type: application/json
+
+{
+    "name" : "akl_mohammed" ,
+    "ar_name" : "عقل" ,
+    "en_name" : "ehab" 
+}
+### members
+get http://localhost:5000/members
+
+###
+
+post http://localhost:5000/members
+Content-Type: application/json
+
+{
+    "name" : "akl_mohammed" ,
+    "ar_full_name" : "عقل" ,
+    "ar_first_name" : "ehab" ,
+    "ar_middle_name" : "akl_mohammed" ,
+    "ar_last_name" : "عقل" ,
+    "en_full_name" : "ehab" ,
+    "en_first_name" : "akl_mohammed" ,
+    "en_middle_name" : "عقل" ,
+    "en_last_name" : "ehab" 
+}
+
+### entity member
+get http://localhost:5000/entitymembers
+
+###
+
+post http://localhost:5000/entitymembers
+Content-Type: application/json
+
+{
+    "name" : "akl_mohammed" ,
+    "entityId": "e3eeb9fe-5dbb-452a-9399-47a562334c73",
+    "memberId" : "8947c93e-513f-434b-8c6d-5e0f61a0c8b6"
+   
+}
